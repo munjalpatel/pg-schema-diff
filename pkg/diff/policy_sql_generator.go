@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/stripe/pg-schema-diff/internal/schema"
+	"github.com/munjalpatel/pg-schema-diff/internal/schema"
 )
 
 var (

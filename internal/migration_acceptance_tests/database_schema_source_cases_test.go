@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/stripe/pg-schema-diff/pkg/diff"
-	"github.com/stripe/pg-schema-diff/pkg/sqldb"
-	"github.com/stripe/pg-schema-diff/pkg/tempdb"
+	"github.com/munjalpatel/pg-schema-diff/pkg/diff"
+	"github.com/munjalpatel/pg-schema-diff/pkg/sqldb"
+	"github.com/munjalpatel/pg-schema-diff/pkg/tempdb"
 )
 
 func databaseSchemaSourcePlan(ctx context.Context, connPool sqldb.Queryable, tempDbFactory tempdb.Factory, newSchemaDDL []string, opts ...diff.PlanOpt) (_ diff.Plan, retErr error) {

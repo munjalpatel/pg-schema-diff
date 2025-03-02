@@ -5,8 +5,8 @@ import (
 	"strings"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/stripe/pg-schema-diff/internal/schema"
-	"github.com/stripe/pg-schema-diff/internal/set"
+	"github.com/munjalpatel/pg-schema-diff/internal/schema"
+	"github.com/munjalpatel/pg-schema-diff/internal/set"
 )
 
 // enumSQLGenerator is a SQL generator for enums. In the future, we might want to convert this to a sqlVertexGenerator

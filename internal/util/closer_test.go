@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/munjalpatel/pg-schema-diff/internal/util"
 	"github.com/stretchr/testify/require"
-	"github.com/stripe/pg-schema-diff/internal/util"
 )
 
 func Test_DoOnErrOrPanicIsCalledOnError(t *testing.T) {

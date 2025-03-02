@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/stripe/pg-schema-diff/internal/schema"
+	"github.com/munjalpatel/pg-schema-diff/internal/schema"
 )
 
 type procedureSQLVertexGenerator struct {
@@ -68,7 +68,7 @@ func (p procedureSQLVertexGenerator) Delete(s schema.Procedure) (partialSQLGraph
 
 	// Run before all tables have been added/altered, since a procedure might query a table. This does not work for columns
 	// being dropped because column drops are not "trackable" from external SQL generators until
-	// https://github.com/stripe/pg-schema-diff/issues/131 is fully implemented.
+	// https://github.com/munjalpatel/pg-schema-diff/issues/131 is fully implemented.
 	for _, t := range p.newSchema.Tables {
 		deps = append(deps, mustRun(buildProcedureVertexId(s.SchemaQualifiedName, diffTypeDelete)).after(buildTableVertexId(t.SchemaQualifiedName, diffTypeAddAlter)))
 	}

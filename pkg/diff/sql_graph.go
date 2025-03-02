@@ -3,7 +3,7 @@ package diff
 import (
 	"fmt"
 
-	"github.com/stripe/pg-schema-diff/internal/graph"
+	"github.com/munjalpatel/pg-schema-diff/internal/graph"
 )
 
 // sqlVertexId is an interface for a vertex id in the SQL graph

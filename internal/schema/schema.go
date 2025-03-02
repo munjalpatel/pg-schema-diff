@@ -8,8 +8,8 @@ import (
 	"sort"
 
 	"github.com/mitchellh/hashstructure/v2"
-	"github.com/stripe/pg-schema-diff/internal/concurrent"
-	"github.com/stripe/pg-schema-diff/internal/queries"
+	"github.com/munjalpatel/pg-schema-diff/internal/concurrent"
+	"github.com/munjalpatel/pg-schema-diff/internal/queries"
 )
 
 type (

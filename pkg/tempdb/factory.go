@@ -11,10 +11,10 @@ import (
 	"github.com/google/uuid"
 	"github.com/jackc/pgx/v4"
 	_ "github.com/jackc/pgx/v4/stdlib"
-	"github.com/stripe/pg-schema-diff/internal/pgidentifier"
-	"github.com/stripe/pg-schema-diff/internal/util"
-	"github.com/stripe/pg-schema-diff/pkg/log"
-	"github.com/stripe/pg-schema-diff/pkg/schema"
+	"github.com/munjalpatel/pg-schema-diff/internal/pgidentifier"
+	"github.com/munjalpatel/pg-schema-diff/internal/util"
+	"github.com/munjalpatel/pg-schema-diff/pkg/log"
+	"github.com/munjalpatel/pg-schema-diff/pkg/schema"
 )
 
 const (

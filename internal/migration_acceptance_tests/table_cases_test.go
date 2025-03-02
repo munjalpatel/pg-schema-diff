@@ -1,7 +1,7 @@
 package migration_acceptance_tests
 
 import (
-	"github.com/stripe/pg-schema-diff/pkg/diff"
+	"github.com/munjalpatel/pg-schema-diff/pkg/diff"
 )
 
 var tableAcceptanceTestCases = []acceptanceTestCase{

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os/exec"
 
-	"github.com/stripe/pg-schema-diff/internal/pgengine"
+	"github.com/munjalpatel/pg-schema-diff/internal/pgengine"
 )
 
 // Parameter represents a parameter to be pg_dump. Don't use a type alias for a string slice

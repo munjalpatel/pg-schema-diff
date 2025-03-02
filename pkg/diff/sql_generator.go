@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/stripe/pg-schema-diff/internal/pgidentifier"
-	"github.com/stripe/pg-schema-diff/internal/schema"
+	"github.com/munjalpatel/pg-schema-diff/internal/pgidentifier"
+	"github.com/munjalpatel/pg-schema-diff/internal/schema"
 )
 
 const (
@@ -2011,7 +2011,7 @@ func (csg *checkConstraintSQLVertexGenerator) GetDeleteDependencies(con schema.C
 		for _, tc := range targetColumns {
 			deps = append(deps, mustRun(csg.GetSQLVertexId(con, diffTypeDelete)).before(buildColumnVertexId(tc.Name, diffTypeAddAlter)))
 			// This is a weird quirk of our graph system, where if a -> b and b -> c and b does-not-exist, b will be
-			// implicitly created s.t. a -> b -> c (https://github.com/stripe/pg-schema-diff/issues/84)
+			// implicitly created s.t. a -> b -> c (https://github.com/munjalpatel/pg-schema-diff/issues/84)
 			//
 			// In this case, "a" is the deletion of the check constraint, "b" is the deletion of
 			// the column, and "c" is the alter/addition of the column. We do not want this behavior. We only want

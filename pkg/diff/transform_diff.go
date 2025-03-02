@@ -3,7 +3,7 @@ package diff
 import (
 	"sort"
 
-	"github.com/stripe/pg-schema-diff/internal/schema"
+	"github.com/munjalpatel/pg-schema-diff/internal/schema"
 )
 
 // dataPackNewTables packs the columns in new tables to minimize the space they occupy

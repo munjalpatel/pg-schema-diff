@@ -9,14 +9,14 @@ import (
 	"github.com/google/uuid"
 	_ "github.com/jackc/pgx/v4/stdlib"
 	"github.com/kr/pretty"
+	"github.com/munjalpatel/pg-schema-diff/internal/pgdump"
+	"github.com/munjalpatel/pg-schema-diff/internal/pgengine"
+	"github.com/munjalpatel/pg-schema-diff/pkg/diff"
+	"github.com/munjalpatel/pg-schema-diff/pkg/log"
+	"github.com/munjalpatel/pg-schema-diff/pkg/sqldb"
 	"github.com/stretchr/testify/suite"
-	"github.com/stripe/pg-schema-diff/internal/pgdump"
-	"github.com/stripe/pg-schema-diff/internal/pgengine"
-	"github.com/stripe/pg-schema-diff/pkg/diff"
-	"github.com/stripe/pg-schema-diff/pkg/log"
-	"github.com/stripe/pg-schema-diff/pkg/sqldb"
 
-	"github.com/stripe/pg-schema-diff/pkg/tempdb"
+	"github.com/munjalpatel/pg-schema-diff/pkg/tempdb"
 )
 
 var (

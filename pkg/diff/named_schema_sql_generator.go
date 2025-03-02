@@ -3,7 +3,7 @@ package diff
 import (
 	"fmt"
 
-	"github.com/stripe/pg-schema-diff/internal/schema"
+	"github.com/munjalpatel/pg-schema-diff/internal/schema"
 )
 
 // namedSchemaSQLGenerator generates SQL statements for named schemas. It's much easier to make this a SQLGenerator

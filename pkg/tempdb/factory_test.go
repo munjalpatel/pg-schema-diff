@@ -9,11 +9,11 @@ import (
 	"time"
 
 	_ "github.com/jackc/pgx/v4/stdlib"
+	"github.com/munjalpatel/pg-schema-diff/internal/pgengine"
+	internalschema "github.com/munjalpatel/pg-schema-diff/internal/schema"
 	"github.com/stretchr/testify/suite"
-	"github.com/stripe/pg-schema-diff/internal/pgengine"
-	internalschema "github.com/stripe/pg-schema-diff/internal/schema"
 
-	"github.com/stripe/pg-schema-diff/pkg/log"
+	"github.com/munjalpatel/pg-schema-diff/pkg/log"
 )
 
 type onInstanceTempDbFactorySuite struct {

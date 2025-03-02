@@ -3,8 +3,8 @@ package set_test
 import (
 	"testing"
 
+	"github.com/munjalpatel/pg-schema-diff/internal/set"
 	"github.com/stretchr/testify/assert"
-	"github.com/stripe/pg-schema-diff/internal/set"
 )
 
 func TestSet_Add(t *testing.T) {
