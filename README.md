@@ -87,7 +87,7 @@ $ pg-schema-diff plan --dsn "postgres://postgres:postgres@localhost:5432/postgre
 * A comprehensive set of features to ensure the safety of planned migrations:
   * Operators warned of dangerous operations.
   * Migration plans are validated first against a temporary database exactly as they would be performed against the real database.
-* Strong support of partitions
+* Strong support of partitions.
 # Install
 ## CLI
 ```bash
