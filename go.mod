@@ -1,4 +1,4 @@
-module github.com/stripe/pg-schema-diff
+module github.com/munjalpatel/pg-schema-diff
 
 go 1.20
 
